@@ -10,7 +10,7 @@
          <param name="sequence">seq</param>
          </generator>
       </id>
-      <property name="empNmae" column="empname"></property>
+      <property name="empName" column="empname"></property>
       <property name="branch"/>
       </class>
 </hibernate-mapping>
