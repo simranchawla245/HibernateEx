@@ -14,8 +14,8 @@ public class App
       SessionFactory factory=configuration.buildSessionFactory(builder.build());
       Session session=factory.openSession();
       Employee employee=new Employee();
-      employee.setEmpName("Divyanjalin");
-      employee.setBranch("Manglore");
+      employee.setEmpName("Divyanjalin1");
+      employee.setBranch("Manglore1");
       session.beginTransaction();
       session.update(employee);
       session.save(employee);
