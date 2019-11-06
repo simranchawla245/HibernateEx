@@ -6,7 +6,9 @@
 <hibernate-mapping package="com.lti.Hib_ex.Hibernate_Project.Hibernate_Project">
    <class name = "Employee" table = "employee">
    	<id name = "id" column = "id">
-         <generator class="seq"/>
+         <generator class="sequence">
+         <param name="sequence">seq</param>
+         </generator>
       </id>
       <property name="empNmae" column="empname"></property>
       <property name="branch"/>
