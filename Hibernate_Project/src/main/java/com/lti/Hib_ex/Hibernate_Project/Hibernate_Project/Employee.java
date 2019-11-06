@@ -10,6 +10,9 @@ public class Employee {
 		this.empName = empName;
 		this.branch = branch;
 	}
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
 	public int getId() {
 		return id;
 	}
