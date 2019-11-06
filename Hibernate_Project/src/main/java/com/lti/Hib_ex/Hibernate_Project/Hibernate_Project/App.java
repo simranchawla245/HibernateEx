@@ -14,10 +14,13 @@ public class App
       SessionFactory factory=configuration.buildSessionFactory(builder.build());
       Session session=factory.openSession();
       Employee employee=new Employee();
-      employee.setEmpName("Divyanjalin1");
-      employee.setBranch("Manglore1");
+      employee.setEmpName("Divyanjalin");
+      employee.setBranch("Manglore");
+      employee.setEmpName("Divyanjalin67");
+      employee.setBranch("Manglore78");
+      session.saveOrUpdate(employee);
       session.beginTransaction();
-      session.update(employee);
+     
       session.save(employee);
       session.getTransaction().commit();
     }
