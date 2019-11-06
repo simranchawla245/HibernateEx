@@ -17,6 +17,7 @@ public class App
       employee.setEmpName("Divyanjalin");
       employee.setBranch("Manglore");
       session.beginTransaction();
+      session.update(employee);
       session.save(employee);
       session.getTransaction().commit();
     }
