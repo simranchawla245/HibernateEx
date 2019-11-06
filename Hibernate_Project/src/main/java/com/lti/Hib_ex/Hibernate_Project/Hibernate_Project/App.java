@@ -16,12 +16,12 @@ public class App
       Employee employee=new Employee();
       employee.setEmpName("Divyanjalin");
       employee.setBranch("Manglore");
-      employee.setEmpName("Divyanjalin67");
-      employee.setBranch("Manglore78");
-      session.saveOrUpdate(employee);
       session.beginTransaction();
-     
-      session.save(employee);
+      Object o = session.load(Employee.class, 1);
+      Employee employee1=(Employee)o;
+      employee1.setEmpName("Johnson");
+      session.update(employee1);
+      session.save(employee1);
       session.getTransaction().commit();
     }
 }
